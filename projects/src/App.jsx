@@ -17,7 +17,7 @@ function App() {
       <div className="my-40"></div>
 
       {/* rating star */}
-      <RatingStar rating={5} />
+      <RatingStar />
       <div className="my-40"></div>
     </div>
   );

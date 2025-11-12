@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 
-export default function RatingStar({ noOfRating }) {
+export default function RatingStar() {
   const [rating, setRating] = useState(0);
 
   const handleRating = (index) => {
