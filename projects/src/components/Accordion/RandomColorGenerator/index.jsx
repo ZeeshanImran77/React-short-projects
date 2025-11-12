@@ -27,11 +27,9 @@ export default function RandomColorGenerator() {
     setRgbValue(rgbColor);
   };
   useEffect(() => {
-    if (typeOfColor === "rgb") {
-      handleRgbGenerator();
-    } else {
-      handleHexGenerator;
-    }
+    if (typeOfColor === "rgb") handleRgbGenerator();
+    else if (typeOfColor === "hex") handleHexGenerator();
+    else console.warn("Unknown color type:", typeOfColor);
   }, [typeOfColor]);
   return (
     <>
@@ -49,6 +47,7 @@ export default function RandomColorGenerator() {
           >
             Create RGB color
           </button>
+
           <button
             onClick={
               typeOfColor === "hex" ? handleHexGenerator : handleRgbGenerator
@@ -59,7 +58,7 @@ export default function RandomColorGenerator() {
           </button>
         </div>
         <div
-          className="w-full h-[600px] flex align-middle justify-center flex-col"
+          className="w-full h-[600px] flex align-middle justify-center flex-col transition-all duration-300"
           style={{ background: color }}
         >
           <h1

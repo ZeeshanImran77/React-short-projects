@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import data from "./data";
+import data from "../Accordion/data";
 import { HiChevronDown } from "react-icons/hi";
 import { HiChevronUp } from "react-icons/hi";
 function Accordion() {

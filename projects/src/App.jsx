@@ -1,5 +1,5 @@
 import "./index.css";
-import Accordion from "./components/Accordion";
+import Accordion from "./components/Accordion/Accordion";
 import RandomColorGenerator from "./components/Accordion/RandomColorGenerator";
 
 function App() {
