@@ -1,10 +1,19 @@
 import "./index.css";
 import Accordion from "./components/Accordion";
+import RandomColorGenerator from "./components/Accordion/RandomColorGenerator";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 flex justify-center items-center">
+    <div>
+      <div className="my-40"></div>
+
+      {/* accordion single and multi selection */}
       <Accordion />
+      <div className="my-40"></div>
+
+      {/* generate random color */}
+      <RandomColorGenerator />
+      <div className="my-40"></div>
     </div>
   );
 }

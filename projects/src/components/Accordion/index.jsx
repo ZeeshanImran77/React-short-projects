@@ -8,10 +8,7 @@ function Accordion() {
   const [multiselection, setMultiSelection] = useState([]);
 
   function handleSingleSelection(id) {
-    setSelected(id);
-    if (selected === id) {
-      setSelected(null);
-    }
+    setSelected((prev) => (prev === id ? null : id));
   }
 
   function handleMultiSelection(id) {
@@ -21,10 +18,16 @@ function Accordion() {
       setMultiSelection([...multiselection, id]);
     }
   }
+
+  const toggleMultiSelect = () => {
+    setMultiSelected((prev) => !prev);
+    setSelected(null);
+    setMultiSelection([]);
+  };
   return (
     <div className="max-w-4xl mx-auto mt-10 space-y-4">
       <button
-        onClick={() => setMultiSelected(!multiSelected)}
+        onClick={toggleMultiSelect}
         className={`${
           multiSelected ? "bg-amber-600" : "bg-gray-800"
         }  text-white font-bold text-lg py-2 px-4 border-r-8 cursor-pointer mx-auto flex`}
