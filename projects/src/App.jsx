@@ -1,6 +1,7 @@
 import "./index.css";
 import Accordion from "./components/Accordion/Accordion";
 import RandomColorGenerator from "./components/Accordion/RandomColorGenerator";
+import RatingStar from "./components/RatingStars";
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
 
       {/* generate random color */}
       <RandomColorGenerator />
+      <div className="my-40"></div>
+
+      {/* rating star */}
+      <RatingStar rating={5} />
       <div className="my-40"></div>
     </div>
   );
