@@ -11,7 +11,6 @@ export default function ImageSlider({ url }) {
         const res = await fetch(url);
         const data = await res.json();
         setSliderData(data);
-        console.log(data);
       } catch (e) {
         console.log(e.message);
       }
