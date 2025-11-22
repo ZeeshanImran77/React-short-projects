@@ -10,6 +10,8 @@ import QRcodeGenerator from "./components/QRcode";
 import ScrollIndicator from "./components/ScrollIndicator";
 import Tabs from "./components/Tabs";
 import Modal from "./components/Modal";
+import GithubProfileFinder from "./components/GithubProfileFinder";
+import SearchAutoComplete from "./components/SearchAutoComplete";
 
 function App() {
   const tabs = [
@@ -67,6 +69,14 @@ function App() {
 
       {/* custom modal */}
       <Modal />
+      <div className="my-40"></div>
+
+      {/* github profile finder */}
+      <GithubProfileFinder />
+      <div className="my-40"></div>
+
+      {/* search auto complete */}
+      <SearchAutoComplete />
       <div className="my-40"></div>
     </div>
   );
