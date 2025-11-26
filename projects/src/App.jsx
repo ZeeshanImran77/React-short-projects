@@ -12,6 +12,7 @@ import Tabs from "./components/Tabs";
 import Modal from "./components/Modal";
 import GithubProfileFinder from "./components/GithubProfileFinder";
 import SearchAutoComplete from "./components/SearchAutoComplete";
+import TicTacToe from "./components/Tic-Tac-Toe";
 
 function App() {
   const tabs = [
@@ -77,6 +78,10 @@ function App() {
 
       {/* search auto complete */}
       <SearchAutoComplete />
+      <div className="my-40"></div>
+
+      {/* tic tac toe game */}
+      <TicTacToe />
       <div className="my-40"></div>
     </div>
   );

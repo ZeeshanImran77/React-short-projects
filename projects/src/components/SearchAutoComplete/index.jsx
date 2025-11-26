@@ -34,7 +34,6 @@ export default function SearchAutoComplete() {
         setUserData(data.users.map((item) => item.firstName));
         setloading(false);
       }
-      console.log(data.users.map((item) => item.firstName));
     } catch (e) {
       setError(e.message);
       setloading(false);
